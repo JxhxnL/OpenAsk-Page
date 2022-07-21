@@ -38,6 +38,24 @@ body {
     color: white;
 }
 
+.barra {
+    width: 100%;
+    height: 70px;
+    background-color: var(--verde);
+}
+
+.barra2 {
+    width: 100%;
+    height: 70px;
+    background-color: var(--gris);
+}
+
+.barra3 {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+}
+
 .letters {
     width: 120px;
 }
@@ -54,7 +72,57 @@ body {
     background-color: rgba(10, 10,10, 0.8);
     background-blend-mode: darken;
     background-attachment: fixed;    
-    margin-bottom: 30px;
+}
+
+.apartado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 75%;
+    gap: 120px;
+    padding: 20px;
+    margin: 40px 0px 0px 0px;
+}
+
+.apartado img {
+    width: 180px;
+}
+
+.apartado img:hover {
+    transform: scale(1.03);
+}
+
+
+.apartado p {
+    font-size: 115%;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.apartado2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 75%;
+    gap: 120px;
+    padding: 20px;
+    margin: 40px 0px 0px 0px;
+}
+
+.apartado2 img {
+    width: 180px;
+}
+
+.apartado2 img:hover {
+    transform: scale(1.03);
+}
+
+.apartado2 p {
+    font-size: 115%;
+    line-height: 35px;
+    text-align: justify;
 }
 
 .banner h1 {
@@ -79,7 +147,7 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 70vh;
+    height: auto;
 }
 
 .container {
@@ -88,7 +156,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 10px auto;
+    margin: 100px auto;
     background-color: var(--verde);
     border-radius: 60px;
 }
@@ -207,7 +275,7 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin: 10px auto;
+        margin: 100px auto;
         background-color: var(--verde);
         border-radius: 60px;
     }    
@@ -228,4 +296,36 @@ footer {
         flex-direction: column;
         gap: 40px;
     }
+    .apartado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 75%;
+        gap: 80px;
+        padding: 20px;
+        margin: 40px 0px 0px 0px;
+    }   
+    .apartado2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 75%;
+        gap: 80px;
+        padding: 20px;
+        margin: 40px 0px 0px 0px;
+    }     
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: gray;
+        color: white;
+    }
+    .barra3 {
+        width: 100%;
+        height: 70px;
+        background-color: gray;
+    }    
 }
